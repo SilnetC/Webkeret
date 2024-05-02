@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "pc-project",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "europe-west1"
+      }
+    }
+  ]
+}

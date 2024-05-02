@@ -1,0 +1,45 @@
+[debug] [2024-05-02T19:13:48.093Z] ----------------------------------------------------------------------
+[debug] [2024-05-02T19:13:48.094Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2024-05-02T19:13:48.094Z] CLI Version:   13.7.5
+[debug] [2024-05-02T19:13:48.095Z] Platform:      darwin
+[debug] [2024-05-02T19:13:48.095Z] Node Version:  v20.11.1
+[debug] [2024-05-02T19:13:48.095Z] Time:          Thu May 02 2024 21:13:48 GMT+0200 (közép-európai nyári idő)
+[debug] [2024-05-02T19:13:48.095Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-02T19:13:48.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-02T19:13:48.138Z] > authorizing via signed-in user (reveszmat74@gmail.com)
+[debug] [2024-05-02T19:13:48.138Z] [iam] checking project webkeret-pc-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-02T19:13:48.139Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webkeret-pc-project:testIamPermissions [none]
+[debug] [2024-05-02T19:13:48.139Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webkeret-pc-project:testIamPermissions x-goog-quota-user=projects/webkeret-pc-project
+[debug] [2024-05-02T19:13:48.139Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webkeret-pc-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-02T19:13:49.095Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webkeret-pc-project:testIamPermissions 200
+[debug] [2024-05-02T19:13:49.096Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webkeret-pc-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-02T19:13:49.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webkeret-pc-project [none]
+[debug] [2024-05-02T19:13:49.496Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webkeret-pc-project 200
+[debug] [2024-05-02T19:13:49.496Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webkeret-pc-project {"projectId":"webkeret-pc-project","projectNumber":"987009277672","displayName":"webkeret-pc-project","name":"projects/webkeret-pc-project","resources":{"hostingSite":"webkeret-pc-project"},"state":"ACTIVE","etag":"1_0e62dff4-1ba4-4f4c-9cb7-e703ed171e3e"}
+[debug] [2024-05-02T19:13:51.794Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/webkeret-pc-project/sites pageToken=&pageSize=10
+[debug] [2024-05-02T19:13:52.943Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/webkeret-pc-project/sites 200
+[debug] [2024-05-02T19:13:52.943Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/webkeret-pc-project/sites {"sites":[{"name":"projects/webkeret-pc-project/sites/webkeret-pc-project","defaultUrl":"https://webkeret-pc-project.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-02T19:13:52.948Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/webkeret-pc-project/sites 
+[debug] [2024-05-02T19:13:53.268Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/webkeret-pc-project/sites 200
+[debug] [2024-05-02T19:13:53.269Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/webkeret-pc-project/sites {"sites":[{"name":"projects/webkeret-pc-project/sites/webkeret-pc-project","defaultUrl":"https://webkeret-pc-project.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-02T19:13:53.270Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webkeret-pc-project/webApps/-/config [none]
+[debug] [2024-05-02T19:13:53.941Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webkeret-pc-project/webApps/-/config 200
+[debug] [2024-05-02T19:13:53.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webkeret-pc-project/webApps/-/config {"projectId":"webkeret-pc-project","appId":"1:987009277672:web:dc99d22d0fd3de4f08b35d","storageBucket":"webkeret-pc-project.appspot.com","apiKey":"AIzaSyBkmKghdpxzI4MuZ8OO1gRkt1oVkfiYGeY","authDomain":"webkeret-pc-project.firebaseapp.com","messagingSenderId":"987009277672","measurementId":"G-FRZJ4MW9ZS"}
+[info] 
+   Thank you for trying our early preview of Angular support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/angular
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-02T19:14:21.990Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:375:42)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
